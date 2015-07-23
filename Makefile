@@ -26,6 +26,8 @@ STM32_INCLUDES = -Ilib -I. -ISTM32F30x_StdPeriph_Driver/inc
 OPTIMIZE       = -Os
 
 CFLAGS	= $(MCFLAGS)  $(OPTIMIZE)  $(DEFS) -I. -I./ $(STM32_INCLUDES)  -Wl,-T,lib/stm32f303.ld
+CFLAGS+=-DDEBUG
+
 AFLAGS	= $(MCFLAGS) 
 
 SRC = main.c \
