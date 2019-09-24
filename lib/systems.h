@@ -48,7 +48,8 @@ void ConfigureGPIO( gpio gpio, int parameters );
 
 
 #ifdef STM32F30X
-#define LEDPIN 0x18
+//#define LEDPIN 0x18
+#define LEDPIN 0x05 //PA05 (From Nucleo board)
 #elif defined( STM32F40_41xxx )
 #define LEDPIN 0x3f
 #endif
